@@ -24,21 +24,21 @@ typedef struct stack_s
 	struct stack_s *next;
 } stack_t;
 /**
- * struct bus_s - variables -args, file, line content
+ * struct custom_s - variables -args, file, line content
  * @arg: value
  * @file: pointer to monty file
  * @content: line content
  * @lifi: flag change stack <-> queue
  * Description: carries values through the program
  */
-typedef struct bus_s
+typedef struct custom_s
 {
 	char *arg;
 	FILE *file;
 	char *content;
 	int lifi;
-}  bus_t;
-extern bus_t bus;
+}  custom_t;
+extern custom_t custom;
 /**
  * struct instruction_s - opcode and its function
  * @opcode: the opcode
